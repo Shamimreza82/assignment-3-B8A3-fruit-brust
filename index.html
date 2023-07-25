@@ -7,6 +7,8 @@
 <!-- Tailwind and Daisy UI CDN link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- Google Font Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +20,11 @@
         font-family: 'Lato', sans-serif;
     }
 </style>
-
+ 
 </head>
 <body class="font-lato">
     <header>
+  <!-- nav Section Start -->
          <nav class="">
           <div class="">
             <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-[#F85559] rounded-full">
@@ -34,19 +37,20 @@
                 </ul>
                 <a href="/" aria-label="Company" title="Company" class="inline-flex items-center lg:mx-auto">
                   <img src="images/logo.png" alt="">
-                  <span class="ml-2 text-2xl font-bold tracking-wide text-gray-100 ">Fruit Burst</span>
+                  <span class="ml-2 text-3xl font-bold tracking-wide text-gray-100 ">Fruit Burst</span>
                 </a>
                 <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
-                  <li><a href="/" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Sign in</a></li>
+                  <!-- <li><a href="/" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Sign in</a></li> -->
                   <li>
-                    <a
+                    <input class="py-2 pr-14 rounded-full pl-3"  type="search"  placeholder="Search Here " >
+                    <!-- <a
                       href="/"
                       class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       aria-label="Sign up"
                       title="Sign up"
                     >
-                      Sign up
-                    </a>
+                      
+                    </a> -->
                   </li>
                 </ul>
                 <!-- Mobile menu -->
@@ -109,7 +113,53 @@
               </div>
             </div>
           </div>
-         </nav>       
+         </nav> 
+
+  <!-- Banner section Start -->
+         <section class="container m-auto mt-8">
+          <div class="carousel w-full rounded-lg">
+            <div id="slide1" class="carousel-item relative w-full ">
+              <div class="hero rounded-lg" style="background-image: url(./images/banner1.png);">
+                <div class="hero-overlay bg-opacity-60 "></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn btn-primary border-none bg-[#F85559]">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+<!--  -------------------->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+<!-- --------------------- -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+<!-- -------------------- -->
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+         </section>
     </header>
     <main>
 
